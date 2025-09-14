@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcidicGalax</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+  <div class="titlebar"></div>
+  
+  <div class="content">
+    <!-- Window Controls -->
+    <div class="window-controls">
+      <button class="control-btn fullscreen-btn" id="fullscreenBtn" title="Tam Ekran">⛶</button>
+      <button class="control-btn close-btn" id="closeBtn" title="Kapat">×</button>
+    </div>
+    
+    <div class="app-container">
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>Chats</h2>
+          <br>
+          <button class="new-chat-btn" id="newChatBtn">New Chat</button>
+          
+          <!-- Search Bar -->
+          <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Sohbet ara...">
+          </div>
+        </div>
+        
+        <div class="chat-history" id="chatHistory">
+          <!-- Scrollable content will be here -->
+        </div>
+      </div>
+      
+      <div class="chat-container">
+        <div class="chat-header">
+          <!-- Hamburger Menu -->
+          <button class="hamburger-btn" id="hamburgerBtn" title="Kenar Çubuğu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </button>
+          
+          <h2 class="banner">AcidicGalax</h2>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+          <div class="logo-container">
+            <img src="logo.png" class="logo" alt="AcidicGalax Logo">
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <form class="input-form" id="messageForm">
+            <div class="message-wrapper">
+              <input type="text" class="message-input" id="messageInput" placeholder="Bir mesaj yazın..." autocomplete="off">
+            </div>
+            <button type="submit" class="send-button">
+              <img src="logo.png" alt="send" class="send-icon">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="eventhandlers.js"></script>
+</body>
+</html>
